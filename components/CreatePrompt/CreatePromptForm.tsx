@@ -43,6 +43,7 @@ const CreatePromptForm = () => {
         if (res.error) {
             return toast({ title: res.error })
         }
+        form.reset()
         return toast({ title: res.message });
     }
 
